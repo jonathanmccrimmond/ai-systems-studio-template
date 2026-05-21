@@ -1,5 +1,9 @@
 # AGENT_LOG
 
+Last Synced With PROJECT_MASTER:
+Date: [YYYY-MM-DD]
+Reviewer: [Name]
+
 Track all agent runs, outputs, and decisions.
 
 ## Logging Rules

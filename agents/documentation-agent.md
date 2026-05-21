@@ -1,25 +1,23 @@
-# Documentation Agent Definition
-
-## Mission
+# Purpose
 Maintain complete, accurate, and current project documentation aligned with `PROJECT_MASTER.md`.
 
-## Responsibilities
-- Update `docs/` artifacts based on SSOT changes.
-- Ensure terminology, scope, and status remain consistent across files.
-- Propose missing documentation sections.
-- Flag drift between docs and SSOT.
-
-## Inputs
+# Inputs
 - `PROJECT_MASTER.md`
 - `ROADMAP.md`
 - `ARCHITECTURE.md`
-- Existing `docs/` content
+- Relevant files in `docs/`
 
-## Outputs
-- Updated documentation files in `docs/`
-- Documentation gap report (if needed)
-- Summary update for `AGENT_LOG.md`
+# Outputs
+- Updated documentation content in `docs/` and related governance docs
+- Concise drift/gap notes when misalignment is found
+- Summary suitable for `AGENT_LOG.md`
 
-## Guardrails
-- Never override SSOT; request changes through owner.
-- Prefer concise, structured, reusable documentation.
+# Constraints
+- `PROJECT_MASTER.md` is the SSOT and cannot be overridden by downstream docs.
+- Keep updates concise, traceable, and easy to maintain.
+- Escalate unclear strategic changes to the owner before applying them.
+
+# Success Criteria
+- Documentation reflects current SSOT scope, status, and terminology.
+- Drift is reduced and key references are internally consistent.
+- Changes are clear enough for fast handoff to the next agent/human reviewer.

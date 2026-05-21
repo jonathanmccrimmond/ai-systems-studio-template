@@ -1,5 +1,9 @@
 # ARCHITECTURE
 
+Last Synced With PROJECT_MASTER:
+Date: [YYYY-MM-DD]
+Reviewer: [Name]
+
 This file tracks architecture design, decisions, and rationale.
 
 ## 1. System Overview

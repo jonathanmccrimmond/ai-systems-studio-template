@@ -6,7 +6,7 @@ on:
   pull_request:
 
 jobs:
-  validate-structure:
+  validate-template:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,13 +20,68 @@ jobs:
           test -d assets
           test -d agents
           test -d templates
+          test -d templates/context
           test -f PROJECT_MASTER.md
-          test -f CHANGELOG.md
           test -f ROADMAP.md
           test -f ARCHITECTURE.md
+          test -f CHANGELOG.md
           test -f AGENT_LOG.md
+          test -f PRIVATE_PROJECT_POLICY.md
+          test -f GLOSSARY.md
+          test -f templates/context/CONTEXT_SNAPSHOT_TEMPLATE.md
 
       - name: Validate SSOT reference
         run: |
           set -e
           grep -q "Single Source of Truth" PROJECT_MASTER.md
+
+      - name: Validate sync headers
+        run: |
+          set -e
+          for f in ROADMAP.md ARCHITECTURE.md CHANGELOG.md AGENT_LOG.md; do
+            grep -q "^Last Synced With PROJECT_MASTER:" "$f"
+            grep -q "^Date:" "$f"
+            grep -q "^Reviewer:" "$f"
+          done
+
+      - name: Validate unresolved TODO/TBD markers
+        run: |
+          set -e
+          # Lightweight enforcement: fail on obvious unfinished markers in core docs.
+          rg -n "\b(TODO|TBD|FIXME)\b" \
+            README.md PROJECT_MASTER.md ROADMAP.md ARCHITECTURE.md CHANGELOG.md AGENT_LOG.md GLOSSARY.md PRIVATE_PROJECT_POLICY.md && \
+            { echo "Unresolved TODO/TBD/FIXME markers found in core docs."; exit 1; } || true
+
+      - name: Validate internal markdown links (local files)
+        run: |
+          set -e
+          # Check local relative links: [text](path) excluding external/http/mailto/# anchors.
+          python3 - <<'PY'
+          import pathlib
+          import re
+          import sys
+
+          root = pathlib.Path('.')
+          md_files = list(root.rglob('*.md'))
+          pattern = re.compile(r'\[[^\]]+\]\(([^)]+)\)')
+          missing = []
+
+          for md in md_files:
+              text = md.read_text(encoding='utf-8')
+              for link in pattern.findall(text):
+                  target = link.strip()
+                  if target.startswith(('http://', 'https://', 'mailto:', '#')):
+                      continue
+                  target = target.split('#', 1)[0]
+                  if not target:
+                      continue
+                  path = (md.parent / target).resolve()
+                  if not path.exists():
+                      missing.append(f"{md}: {link}")
+
+          if missing:
+              print('Broken internal markdown links found:')
+              for item in missing:
+                  print(item)
+              sys.exit(1)
+          PY

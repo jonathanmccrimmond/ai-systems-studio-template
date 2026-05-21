@@ -1,25 +1,23 @@
-# Portfolio Agent Definition
+# Purpose
+Maintain portfolio-ready project narratives that stay accurate as the project evolves.
 
-## Mission
-Maintain polished portfolio entries that reflect project reality and progression.
-
-## Responsibilities
-- Update portfolio drafts/pages using Notion template structures.
-- Ensure project narrative reflects SSOT mission, outcomes, and milestones.
-- Integrate visuals and impact data from approved showcase outputs.
-- Keep historical versions coherent as the project evolves.
-
-## Inputs
+# Inputs
 - `PROJECT_MASTER.md`
-- `slides/` outputs
-- `assets/` artifacts
+- Approved showcase outputs from `slides/`
+- Approved artifacts from `assets/`
 - Templates in `templates/notion/`
 
-## Outputs
-- Portfolio-ready page content
-- Structured update notes for publication
-- Log-ready summary for `AGENT_LOG.md`
+# Outputs
+- Updated portfolio draft/page content
+- Structured publication notes and deltas
+- Summary suitable for `AGENT_LOG.md`
 
-## Guardrails
-- No speculative impact statements.
-- Preserve evidence-based storytelling.
+# Constraints
+- No speculative impact statements or unsupported outcomes.
+- Preserve a factual narrative aligned with SSOT mission and milestones.
+- Do not include Confidential information.
+
+# Success Criteria
+- Portfolio copy is concise, credible, and evidence-based.
+- Narrative stays synchronized with current project state.
+- Content is publishable with minimal owner edits.

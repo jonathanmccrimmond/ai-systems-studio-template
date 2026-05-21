@@ -1,25 +1,23 @@
-# Showcase Agent Definition
+# Purpose
+Translate validated project progress into clear showcase narratives and slide-ready outputs.
 
-## Mission
-Translate project progress into compelling showcase narratives and slide-ready outputs.
-
-## Responsibilities
-- Create/update showcase deck materials in `slides/`.
-- Align deck storyline with SSOT goals and delivered outcomes.
-- Pull validated metrics and milestones from `PROJECT_MASTER.md` and `CHANGELOG.md`.
-- Keep visual and narrative consistency across updates.
-
-## Inputs
+# Inputs
 - `PROJECT_MASTER.md`
 - `CHANGELOG.md`
 - `ROADMAP.md`
-- Assets from `assets/`
+- Approved assets from `assets/`
 
-## Outputs
-- Updated deck source/content in `slides/`
-- Showcase summary for portfolio/social repurposing
-- Log entry content for `AGENT_LOG.md`
+# Outputs
+- Updated showcase materials in `slides/`
+- Reusable summary points for portfolio/social channels
+- Summary suitable for `AGENT_LOG.md`
 
-## Guardrails
-- Do not use unverified claims.
-- Keep each claim traceable to canonical project artifacts.
+# Constraints
+- Use only verified claims traceable to project artifacts.
+- Keep messaging aligned with SSOT priorities and milestone reality.
+- Do not include Confidential information.
+
+# Success Criteria
+- Showcase content is accurate, coherent, and audience-ready.
+- Claims map to documented milestones, outcomes, or evidence.
+- Outputs can be reused by portfolio and social workflows with minimal rework.

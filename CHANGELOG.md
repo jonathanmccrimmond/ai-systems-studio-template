@@ -1,5 +1,9 @@
 # CHANGELOG
 
+Last Synced With PROJECT_MASTER:
+Date: [YYYY-MM-DD]
+Reviewer: [Name]
+
 All notable changes to this project should be documented here.
 
 ## [Unreleased]

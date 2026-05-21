@@ -1,5 +1,9 @@
 # ROADMAP
 
+Last Synced With PROJECT_MASTER:
+Date: [YYYY-MM-DD]
+Reviewer: [Name]
+
 This roadmap must stay aligned with `PROJECT_MASTER.md`.
 
 ## Planning Horizon
