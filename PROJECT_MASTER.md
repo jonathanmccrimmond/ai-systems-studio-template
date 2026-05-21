@@ -5,79 +5,79 @@
 ## 1. Project Identity
 
 - Project Name: [TEMPLATE_PROJECT_NAME]
-- Project Code: [TPS-001]
-- Owner: [Owner Name]
-- Contributors: [Team / Agents]
-- Status: Planning
-- Start Date: [YYYY-MM-DD]
-- Target Milestone Date: [YYYY-MM-DD]
+- Project Code: AISS-TEMPLATE-001
+- Owner: Jonathan McCrimmond
+- Contributors: Documentation Agent, Showcase Agent, Portfolio Agent, Social Media Agent
+- Status: Active
+- Start Date: 2026-05-21
+- Target Milestone Date: 2026-06-30
 
 ## 2. Mission and Outcomes
 
 ### Mission
-[One paragraph: What this project exists to accomplish.]
+Establish a reusable, agent-driven repository template that standardizes how AI projects are planned, documented, showcased, and evolved from initial concept through portfolio and distribution.
 
 ### Success Metrics
-- Metric 1: [Definition + target]
-- Metric 2: [Definition + target]
-- Metric 3: [Definition + target]
+- Metric 1: Template Completeness - 100% required files/folders and templates present.
+- Metric 2: SSOT Compliance - 100% strategic updates initiated in `PROJECT_MASTER.md`.
+- Metric 3: Onboarding Speed - New project initialization completed in under 60 minutes using the checklist.
 
 ## 3. Scope
 
 ### In Scope
-- [Primary deliverable A]
-- [Primary deliverable B]
+- Reusable repository scaffold for AI Systems Studio projects.
+- Agent definitions and operational templates for docs, showcase, portfolio, and social.
 
 ### Out of Scope
-- [Non-goal A]
-- [Non-goal B]
+- Project-specific implementation code for any one product.
+- Platform-specific publishing automation beyond starter workflow baseline.
 
 ## 4. Users and Stakeholders
 
-- Primary Users: [Who uses it]
-- Internal Stakeholders: [Who depends on it]
-- External Stakeholders: [Optional]
+- Primary Users: Project owner and collaborators launching new AI initiatives.
+- Internal Stakeholders: Documentation, showcase, portfolio, and social content owners.
+- External Stakeholders: Optional future clients, hiring managers, and community audience.
 
 ## 5. Current State Snapshot
 
-- Phase: Discovery
+- Phase: Foundation Complete
 - Health: Green
-- Risks: [Top risk summary]
-- Blockers: [Current blockers]
-- Next Decision Needed: [Decision statement]
+- Risks: Drift between SSOT and downstream artifacts if cadence is not followed.
+- Blockers: None.
+- Next Decision Needed: GitHub remote naming and visibility defaults for inherited repos.
 
 ## 6. Workstreams
 
-- Documentation Workstream: [Status + owner]
-- Product/Build Workstream: [Status + owner]
-- Showcase/Portfolio Workstream: [Status + owner]
-- Distribution/Social Workstream: [Status + owner]
+- Documentation Workstream: Active - Documentation Agent + Owner
+- Product/Build Workstream: Planned - Future project teams
+- Showcase/Portfolio Workstream: Active - Showcase Agent + Portfolio Agent
+- Distribution/Social Workstream: Planned - Social Media Agent
 
 ## 7. Deliverables
 
-- Core Build Artifact(s): [List]
-- Documentation Set: [List]
-- Showcase Deck: [slides path or status]
-- Portfolio Entry: [notion/page status]
-- Architecture Artifacts: [diagrams + ADRs]
+- Core Build Artifact(s): AI Systems Studio Template repository baseline.
+- Documentation Set: SSOT, roadmap, architecture, changelog, agent log, README.
+- Showcase Deck: Template ready at `templates/slides/google-slides-showcase-template.md`.
+- Portfolio Entry: Template ready at `templates/notion/notion-project-page-template.md`.
+- Architecture Artifacts: ADR-001 accepted; diagram template available.
 
 ## 8. Architecture and Decisions Index
 
 Reference details in `ARCHITECTURE.md`.
 
 - Current Architecture Version: v0.1
-- Last Architecture Review: [YYYY-MM-DD]
-- Open ADRs: [IDs]
-- Approved ADRs: [IDs]
+- Last Architecture Review: 2026-05-21
+- Open ADRs: None
+- Approved ADRs: ADR-001
 
 ## 9. Roadmap Alignment
 
 Reference execution plan in `ROADMAP.md`.
 
-- Current Sprint / Cycle: [Name]
-- Milestone 1: [Date + objective]
-- Milestone 2: [Date + objective]
-- Milestone 3: [Date + objective]
+- Current Sprint / Cycle: Baseline Initialization
+- Milestone 1: 2026-05-21 - Template foundation completed.
+- Milestone 2: 2026-06-07 - First inherited project launched from template.
+- Milestone 3: 2026-06-30 - Workflow and automation enhancements shipped.
 
 ## 10. Change Control
 
