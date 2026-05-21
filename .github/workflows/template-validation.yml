@@ -1,0 +1,32 @@
+name: Template Validation
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+
+jobs:
+  validate-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required files and folders
+        run: |
+          set -e
+          test -d docs
+          test -d slides
+          test -d assets
+          test -d agents
+          test -d templates
+          test -f PROJECT_MASTER.md
+          test -f CHANGELOG.md
+          test -f ROADMAP.md
+          test -f ARCHITECTURE.md
+          test -f AGENT_LOG.md
+
+      - name: Validate SSOT reference
+        run: |
+          set -e
+          grep -q "Single Source of Truth" PROJECT_MASTER.md
