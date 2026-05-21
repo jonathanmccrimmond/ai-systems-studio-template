@@ -57,3 +57,22 @@ Every project derived from this template should eventually:
 
 A starter workflow file is included at `.github/workflows/template-validation.yml`.
 Customize it per project for linting, link checks, docs checks, and release automation.
+
+## Agent Operating Rules
+
+1. PROJECT_MASTER.md is always updated first.
+2. No downstream file may contradict PROJECT_MASTER.md.
+3. Agents must log every meaningful update in AGENT_LOG.md.
+4. Architecture changes must be recorded in ARCHITECTURE.md.
+5. User-facing showcase material must be understandable without reading the code.
+6. Technical detail should sit behind the simple overview, not replace it.
+7. Private projects must not expose sensitive data in slides, portfolio pages, or social outputs.
+8. Every generated deck should include:
+   - hook
+   - problem
+   - solution
+   - AI agent workflow
+   - screenshots/evidence
+   - technical architecture
+   - roadmap
+   - what this demonstrates
