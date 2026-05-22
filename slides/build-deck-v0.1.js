@@ -4,6 +4,7 @@
 
 const pptxgen = require('/Users/jonathanmccrimmond/.nvm/versions/node/v22.17.1/lib/node_modules/pptxgenjs');
 const sharp   = require('/Users/jonathanmccrimmond/.nvm/versions/node/v22.17.1/lib/node_modules/sharp');
+const path    = require('path');
 
 // ─── Theme Tokens ─────────────────────────────────────────────────────────────
 const T = {
@@ -402,7 +403,7 @@ async function iconCircle(slide, pres, key, iconColor, bgColor, x, y, size) {
       { icon: 'pieChart', ic: T.BLUE, bg: T.BLUE_L, label: 'Live Studio Hub',       desc: 'One page lists every project.' },
       { icon: 'file',     ic: T.TEAL, bg: T.TEAL_L, label: 'projects.json Manifest',desc: 'Single file drives the page.' },
       { icon: 'shield',   ic: T.PURP, bg: T.PURP_L, label: 'Studio-Only',           desc: 'Excluded from inheritance.' },
-      { icon: 'globe',    ic: T.BLUE, bg: T.BLUE_L, label: 'GitHub Pages',          desc: 'jonathanmccrimmond.github.io/ai-systems-studio-template/' },
+      { icon: 'globe',    ic: T.BLUE, bg: T.BLUE_L, label: 'GitHub Pages',          desc: 'jonathanmccrimmond.github.io/ai-systems-studio/' },
       { icon: 'repeat',   ic: T.TEAL, bg: T.TEAL_L, label: 'Synced With SSOT',      desc: 'Each entry mirrors a PROJECT_MASTER.' },
     ];
     const fX0 = 0.42, fY0 = 0.98, fW = 4.35, fH = 0.78, fGap = 0.1;
@@ -515,7 +516,7 @@ async function iconCircle(slide, pres, key, iconColor, bgColor, x, y, size) {
   }
 
   // ─── Write output ──────────────────────────────────────────────────────────
-  const outPath = '/Users/jonathanmccrimmond/Projects/ai-systems-studio-template/slides/AISS-Template-Showcase-v0.1.pptx';
+  const outPath = path.join(__dirname, 'AISS-Template-Showcase-v0.1.pptx');
   await pres.writeFile({ fileName: outPath });
   console.log('Done:', outPath);
 

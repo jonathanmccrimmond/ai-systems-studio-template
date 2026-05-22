@@ -53,7 +53,7 @@ python3 -m http.server 8000
 
 ## Deploying
 
-Push the template repo and enable GitHub Pages with source = `main` branch, folder = `/dashboard`. The dashboard will be live at `https://<user>.github.io/ai-systems-studio-template/`.
+Push the template repo and enable GitHub Pages via the `Deploy studio dashboard` Actions workflow. The dashboard will be live at `https://<user>.github.io/ai-systems-studio/`.
 
 ## Keeping it in sync with SSOT
 
