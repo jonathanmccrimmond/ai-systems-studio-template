@@ -2,9 +2,9 @@
   "studio": {
     "name": "AI Systems Studio",
     "owner": "Jonathan McCrimmond",
-    "tagline": "Agent-driven AI projects, built on a shared operating system."
+    "tagline": "Practical AI systems for real businesses — built solo, run by agents, judged on output."
   },
-  "last_updated": "2026-05-22T16:58:36+02:00",
+  "last_updated": "2026-05-22T17:02:00+02:00",
   "projects": [
     {
       "code": "AISS-TEMPLATE-001",
