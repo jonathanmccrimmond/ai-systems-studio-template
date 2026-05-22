@@ -1,0 +1,217 @@
+:root {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --ink: #1a1a1a;
+  --ink-soft: #555;
+  --line: #e4e4e0;
+  --accent: #2a4d3a;
+  --accent-soft: #e8efe9;
+  --status-active: #2a4d3a;
+  --status-planning: #6b5b1f;
+  --status-shipped: #2a4470;
+  --status-archived: #6b6b6b;
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121311;
+    --surface: #1c1e1b;
+    --ink: #f0efe8;
+    --ink-soft: #a8a89d;
+    --line: #2d302c;
+    --accent: #8fbf9f;
+    --accent-soft: #1f2a22;
+    --status-active: #8fbf9f;
+    --status-planning: #d4c272;
+    --status-shipped: #8aa8d8;
+    --status-archived: #888;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.site-header {
+  padding: 64px 0 40px;
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header h1 {
+  margin: 0 0 8px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 1.125rem;
+  color: var(--ink-soft);
+  max-width: 60ch;
+}
+
+.owner {
+  margin: 16px 0 0;
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+}
+
+main { padding: 48px 0 64px; }
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.count {
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+}
+
+.card-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card-name {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.card-code {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  font-family: "SF Mono", Menlo, monospace;
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+  display: block;
+}
+
+.status {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--status-active);
+  white-space: nowrap;
+}
+
+.status-Planning { color: var(--status-planning); }
+.status-Shipped { color: var(--status-shipped); }
+.status-Archived { color: var(--status-archived); }
+
+.card-pitch {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+  flex-grow: 1;
+}
+
+.card-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 4px;
+  border-top: 1px solid var(--line);
+}
+
+.card-links a {
+  font-size: 0.875rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card-links a:hover { text-decoration: underline; }
+
+.card-links .disabled {
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.empty, .error {
+  text-align: center;
+  padding: 48px 0;
+  color: var(--ink-soft);
+}
+
+.error { color: #a02020; }
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
+  font-size: 0.8125rem;
+  color: var(--ink-soft);
+}
+
+.site-footer code {
+  background: var(--accent-soft);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+}
+
+.site-footer p { margin: 4px 0; }
+.last-updated { color: var(--ink-soft); }
