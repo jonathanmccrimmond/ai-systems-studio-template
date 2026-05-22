@@ -40,11 +40,11 @@ Establish a reusable, agent-driven repository template that standardizes how AI 
 
 ## 5. Current State Snapshot
 
-- Phase: Foundation Complete
+- Phase: Foundation Complete + Studio Dashboard added
 - Health: Green
-- Risks: Drift between SSOT and downstream artifacts if cadence is not followed.
+- Risks: Drift between SSOT and downstream artifacts if cadence is not followed. Drift between `dashboard/projects.json` and each project's `PROJECT_MASTER.md`.
 - Blockers: None.
-- Next Decision Needed: GitHub remote naming and visibility defaults for inherited repos.
+- Next Decision Needed: GitHub remote naming and visibility defaults for inherited repos. Whether to flip template repo public to host the dashboard via GitHub Pages.
 
 ## 6. Workstreams
 
@@ -60,6 +60,7 @@ Establish a reusable, agent-driven repository template that standardizes how AI 
 - Showcase Deck: Template ready at `templates/slides/google-slides-showcase-template.md`.
 - Portfolio Entry: Template ready at `templates/notion/notion-project-page-template.md`.
 - Architecture Artifacts: ADR-001 accepted; diagram template available.
+- Studio Dashboard: Static HTML dashboard at `dashboard/` listing all studio projects; manifest at `dashboard/projects.json`; studio-level only and excluded from inheritance.
 
 ## 8. Architecture and Decisions Index
 

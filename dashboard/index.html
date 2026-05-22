@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Systems Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 id="studio-name">AI Systems Studio</h1>
+      <p id="studio-tagline" class="tagline"></p>
+      <p id="studio-owner" class="owner"></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="projects-heading">
+      <div class="section-head">
+        <h2 id="projects-heading">Projects</h2>
+        <span id="project-count" class="count" aria-live="polite"></span>
+      </div>
+      <ul id="project-list" class="card-grid"></ul>
+      <p id="empty-state" class="empty" hidden>No projects yet.</p>
+      <p id="error-state" class="error" hidden></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Generated from <code>projects.json</code> &middot; SSOT lives in each project's <code>PROJECT_MASTER.md</code>.</p>
+      <p id="last-updated" class="last-updated" hidden></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

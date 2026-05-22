@@ -13,6 +13,7 @@ All notable changes to this project should be documented here.
 - Core governance files (`PROJECT_MASTER.md`, `ROADMAP.md`, `ARCHITECTURE.md`, `AGENT_LOG.md`).
 - Agent definitions for documentation, showcase, portfolio, and social media workflows.
 - Reusable templates for documentation, slides, Notion pages, and architecture diagrams.
+- Studio Dashboard at `dashboard/` — static HTML + `projects.json` manifest listing studio projects; includes `update-timestamp.sh` for git-driven last-updated footer; excluded from inheritance via note in `NEW_PROJECT_SETUP.md`.
 
 ### Changed
 - N/A

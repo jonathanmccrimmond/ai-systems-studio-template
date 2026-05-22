@@ -1,0 +1,24 @@
+{
+  "studio": {
+    "name": "AI Systems Studio",
+    "owner": "Jonathan McCrimmond",
+    "tagline": "Agent-driven AI projects, built on a shared operating system."
+  },
+  "last_updated": "2026-05-22T16:54:15+02:00",
+  "projects": [
+    {
+      "code": "CPI-ENG-001",
+      "name": "CPI Engine",
+      "status": "Active",
+      "pitch": "Commercial Premises Intelligence Engine — identifies and qualifies commercial property opportunities from public, compliant data signals.",
+      "slide_deck": ""
+    },
+    {
+      "code": "AISS-TEMPLATE-001",
+      "name": "AI Systems Studio Template",
+      "status": "Active",
+      "pitch": "Reusable, agent-driven repository template that standardizes how every studio project is planned, documented, and showcased.",
+      "slide_deck": ""
+    }
+  ]
+}

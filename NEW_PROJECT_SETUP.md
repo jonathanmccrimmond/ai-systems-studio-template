@@ -6,6 +6,7 @@ Use this file for a hands-off launch of any new project from this template.
 
 - Create a new repository using this template.
 - Clone locally and open it in your editor.
+- **Delete the `dashboard/` folder.** It is studio-level only and lives in the template repo itself, not in inherited projects. Add it back to the studio's `projects.json` once your new project is initialized.
 
 ## 2) Configure SSOT First
 
