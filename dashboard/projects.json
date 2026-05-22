@@ -4,14 +4,14 @@
     "owner": "Jonathan McCrimmond",
     "tagline": "Exploring what one person plus a team of agents can actually build."
   },
-  "last_updated": "2026-05-22T17:05:19+02:00",
+  "last_updated": "2026-05-22T17:12:44+02:00",
   "projects": [
     {
       "code": "AISS-TEMPLATE-001",
       "name": "AI Systems Studio Template",
       "status": "Active",
       "pitch": "Reusable, agent-driven repository template that standardizes how every studio project is planned, documented, and showcased.",
-      "slide_deck": ""
+      "slide_deck": "https://github.com/jonathanmccrimmond/ai-systems-studio-template/blob/main/slides/AISS-Template-Showcase-v0.1.pptx"
     },
     {
       "code": "MACFIRE-SCOUT-001",
