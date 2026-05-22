@@ -4,35 +4,35 @@
     "owner": "Jonathan McCrimmond",
     "tagline": "Exploring what one person plus a team of agents can actually build."
   },
-  "last_updated": "2026-05-22T17:12:44+02:00",
+  "last_updated": "2026-05-22T17:21:23+02:00",
   "projects": [
     {
-      "code": "AISS-TEMPLATE-001",
-      "name": "AI Systems Studio Template",
+      "code": "WT-001",
+      "name": "Weight Tracker",
       "status": "Active",
-      "pitch": "Reusable, agent-driven repository template that standardizes how every studio project is planned, documented, and showcased.",
-      "slide_deck": "https://github.com/jonathanmccrimmond/ai-systems-studio-template/blob/main/slides/AISS-Template-Showcase-v0.1.pptx"
+      "pitch": "Private two-person WhatsApp health tracker — Gemini Flash parses messages, Supabase stores logs, a public-by-slug dashboard shows progress, and Vercel Cron sends morning/midday/evening nudges.",
+      "slide_deck": "https://docs.google.com/presentation/d/1md4w1mb_jBcFNfKIpOgf-ZkNGaaqFzoU/edit?usp=sharing&ouid=114154757220276176557&rtpof=true&sd=true"
     },
     {
       "code": "MACFIRE-SCOUT-001",
       "name": "Macfire Scout",
       "status": "Active",
       "pitch": "AI lead scout for Scottish fire safety — pulls newly registered companies from Companies House daily, scores and enriches them with director history and Google Places signals, drafts personalised outreach, and logs everything to Notion.",
-      "slide_deck": ""
+      "slide_deck": "https://docs.google.com/presentation/d/1tVF3yontFFgixup52AuVFMlHLg2nVKHe/edit?usp=sharing&ouid=114154757220276176557&rtpof=true&sd=true"
     },
     {
       "code": "CPI-ENG-001",
       "name": "CPI Engine",
       "status": "Active",
       "pitch": "Sector-agnostic commercial premises intelligence — identifies and qualifies commercial property opportunities across any vertical (not just fire suppression) using public, compliant data signals.",
-      "slide_deck": ""
+      "slide_deck": "https://docs.google.com/presentation/d/1eQuEBj2mWHKay8HRyx-vTUxW7GUN30rg/edit?usp=sharing&ouid=114154757220276176557&rtpof=true&sd=true"
     },
     {
-      "code": "WT-001",
-      "name": "Weight Tracker",
+      "code": "AISS-TEMPLATE-001",
+      "name": "AI Systems Studio Template",
       "status": "Active",
-      "pitch": "Private two-person WhatsApp health tracker — Gemini Flash parses messages, Supabase stores logs, a public-by-slug dashboard shows progress, and Vercel Cron sends morning/midday/evening nudges.",
-      "slide_deck": ""
+      "pitch": "Reusable, agent-driven repository template that standardizes how every studio project is planned, documented, and showcased.",
+      "slide_deck": "https://docs.google.com/presentation/d/1l6kZnsiackSxl42M69eCc_FdnT1B7CbZ/edit?usp=sharing&ouid=114154757220276176557&rtpof=true&sd=true"
     }
   ]
 }
