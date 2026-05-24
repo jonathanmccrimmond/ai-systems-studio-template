@@ -1,10 +1,10 @@
 {
   "studio": {
-    "name": "AI Systems Studio",
+    "name": "JMcC AI Systems Studio",
     "owner": "Jonathan McCrimmond",
     "tagline": "Exploring what one person plus a team of agents can actually build."
   },
-  "last_updated": "2026-05-22T17:41:34+02:00",
+  "last_updated": "2026-05-24T11:55:09+01:00",
   "projects": [
     {
       "name": "Weight Tracker",
