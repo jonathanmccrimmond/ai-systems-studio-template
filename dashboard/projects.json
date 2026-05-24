@@ -4,7 +4,7 @@
     "owner": "Jonathan McCrimmond",
     "tagline": "Exploring what one person plus a team of agents can actually build."
   },
-  "last_updated": "2026-05-24T11:55:09+01:00",
+  "last_updated": "2026-05-24T12:18:41+01:00",
   "projects": [
     {
       "name": "Weight Tracker",
@@ -13,7 +13,7 @@
       "slide_deck": "https://docs.google.com/presentation/d/1md4w1mb_jBcFNfKIpOgf-ZkNGaaqFzoU/edit?usp=sharing&ouid=114154757220276176557&rtpof=true&sd=true"
     },
     {
-      "name": "Macfire Scout",
+      "name": "MacFire SDR Lead Scout",
       "status": "Active",
       "pitch": "AI lead scout for Scottish fire safety — pulls newly registered companies from Companies House daily, scores and enriches them with director history and Google Places signals, drafts personalised outreach, and logs everything to Notion.",
       "slide_deck": "https://docs.google.com/presentation/d/1tVF3yontFFgixup52AuVFMlHLg2nVKHe/edit?usp=sharing&ouid=114154757220276176557&rtpof=true&sd=true"
