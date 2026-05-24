@@ -58,12 +58,6 @@
     name.className = "card-name";
     name.textContent = p.name || "Untitled project";
     titleWrap.appendChild(name);
-    if (p.code) {
-      const code = document.createElement("span");
-      code.className = "card-code";
-      code.textContent = p.code;
-      titleWrap.appendChild(code);
-    }
     head.appendChild(titleWrap);
 
     if (p.status) {
