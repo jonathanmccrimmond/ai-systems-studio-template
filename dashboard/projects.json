@@ -4,7 +4,7 @@
     "owner": "Jonathan McCrimmond",
     "tagline": "Exploring what one person plus a team of agents can actually build."
   },
-  "last_updated": "2026-05-26T12:51:34+01:00",
+  "last_updated": "2026-05-26T13:00:03+01:00",
   "projects": [
     {
       "name": "Weight Tracker",
@@ -33,7 +33,8 @@
     {
       "name": "Whack a Logan: Arcade Edition",
       "status": "Shipped",
-      "pitch": "A fast, mobile-first whack-a-mole arcade game built in Phaser 3 — tap Logan as he pops across a 3×3 grid in 60-second rounds, chain combos for x2/x3 multipliers, grab golden bonuses, dodge sleeping decoys, and chase a locally saved high score."
+      "pitch": "A fast, mobile-first whack-a-mole arcade game built in Phaser 3 — tap Logan as he pops across a 3×3 grid in 60-second rounds, chain combos for x2/x3 multipliers, grab golden bonuses, dodge sleeping decoys, and chase a locally saved high score.",
+      "slide_deck": "https://docs.google.com/presentation/d/14_y0KqkEUsQjC2IRLNl93PPy_TvjofrB/edit?usp=sharing&ouid=114154757220276176557&rtpof=true&sd=true"
     }
   ]
 }
