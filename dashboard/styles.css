@@ -208,23 +208,32 @@ main { padding: 56px 0 72px; }
   padding: 14px 0 0;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
   border-top: 1px solid var(--line);
 }
 
 .card-links a {
-  font-size: 0.875rem;
+  display: inline-block;
+  padding: 6px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
   color: var(--accent);
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.15s ease;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-.card-links a:hover { color: var(--accent-bright); }
+.card-links a:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
 
 .card-links .disabled {
-  font-size: 0.875rem;
+  padding: 6px 16px;
+  font-size: 0.8125rem;
   color: var(--ink-soft);
   font-style: italic;
 }

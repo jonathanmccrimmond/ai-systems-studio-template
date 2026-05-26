@@ -81,7 +81,7 @@
     if (p.slide_deck) {
       const a = document.createElement("a");
       a.href = p.slide_deck;
-      a.textContent = "Slide deck →";
+      a.textContent = "Slide deck";
       a.target = "_blank";
       a.rel = "noopener noreferrer";
       linkItem.appendChild(a);
@@ -95,7 +95,7 @@
       const appItem = document.createElement("li");
       const a = document.createElement("a");
       a.href = p.app_link.url;
-      a.textContent = `${p.app_link.label || "Open"} →`;
+      a.textContent = p.app_link.label || "Open";
       a.target = "_blank";
       a.rel = "noopener noreferrer";
       appItem.appendChild(a);
