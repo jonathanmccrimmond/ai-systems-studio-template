@@ -4,7 +4,7 @@
     "owner": "Jonathan McCrimmond",
     "tagline": "Exploring what one person plus a team of agents can actually build."
   },
-  "last_updated": "2026-05-24T12:18:41+01:00",
+  "last_updated": "2026-05-24T12:38:00+01:00",
   "projects": [
     {
       "name": "Weight Tracker",
@@ -29,6 +29,12 @@
       "status": "Active",
       "pitch": "Reusable, agent-driven repository template that standardizes how every studio project is planned, documented, and showcased.",
       "slide_deck": "https://docs.google.com/presentation/d/1l6kZnsiackSxl42M69eCc_FdnT1B7CbZ/edit?usp=sharing&ouid=114154757220276176557&rtpof=true&sd=true"
+    },
+    {
+      "name": "Whack a Logan: Arcade Edition",
+      "status": "Shipped",
+      "pitch": "A fast, mobile-first whack-a-mole arcade game built in Phaser 3 — tap Logan as he pops across a 3×3 grid in 60-second rounds, chain combos for x2/x3 multipliers, grab golden bonuses, dodge sleeping decoys, and chase a locally saved high score.",
+      "slide_deck": "decks/WhackaLogan.pptx"
     }
   ]
 }
