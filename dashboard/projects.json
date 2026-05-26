@@ -4,19 +4,21 @@
     "owner": "Jonathan McCrimmond",
     "tagline": "Exploring what one person plus a team of agents can actually build."
   },
-  "last_updated": "2026-05-26T13:00:03+01:00",
+  "last_updated": "2026-05-26T13:00:49+01:00",
   "projects": [
     {
       "name": "Weight Tracker",
       "status": "Active",
       "pitch": "Private two-person WhatsApp health tracker — Gemini Flash parses messages, Supabase stores logs, a public-by-slug dashboard shows progress, and Vercel Cron sends morning/midday/evening nudges.",
-      "slide_deck": "https://docs.google.com/presentation/d/1md4w1mb_jBcFNfKIpOgf-ZkNGaaqFzoU/edit?usp=sharing&ouid=114154757220276176557&rtpof=true&sd=true"
+      "slide_deck": "https://docs.google.com/presentation/d/1md4w1mb_jBcFNfKIpOgf-ZkNGaaqFzoU/edit?usp=sharing&ouid=114154757220276176557&rtpof=true&sd=true",
+      "app_link": { "label": "Dashboard", "url": "https://jk-weight-tracker.vercel.app/dashboard/jonathan-and-kelly" }
     },
     {
-      "name": "MacFire SDR Lead Scout",
+      "name": "MacFire AI Lead Scout",
       "status": "Active",
       "pitch": "AI lead scout for Scottish fire safety — pulls newly registered companies from Companies House daily, scores and enriches them with director history and Google Places signals, drafts personalised outreach, and logs everything to Notion.",
-      "slide_deck": "https://docs.google.com/presentation/d/1tVF3yontFFgixup52AuVFMlHLg2nVKHe/edit?usp=sharing&ouid=114154757220276176557&rtpof=true&sd=true"
+      "slide_deck": "https://docs.google.com/presentation/d/1tVF3yontFFgixup52AuVFMlHLg2nVKHe/edit?usp=sharing&ouid=114154757220276176557&rtpof=true&sd=true",
+      "app_link": { "label": "Dashboard", "url": "https://macfire-dashboard.onrender.com/" }
     },
     {
       "name": "CPI Engine",
@@ -34,7 +36,8 @@
       "name": "Whack a Logan: Arcade Edition",
       "status": "Shipped",
       "pitch": "A fast, mobile-first whack-a-mole arcade game built in Phaser 3 — tap Logan as he pops across a 3×3 grid in 60-second rounds, chain combos for x2/x3 multipliers, grab golden bonuses, dodge sleeping decoys, and chase a locally saved high score.",
-      "slide_deck": "https://docs.google.com/presentation/d/14_y0KqkEUsQjC2IRLNl93PPy_TvjofrB/edit?usp=sharing&ouid=114154757220276176557&rtpof=true&sd=true"
+      "slide_deck": "https://docs.google.com/presentation/d/14_y0KqkEUsQjC2IRLNl93PPy_TvjofrB/edit?usp=sharing&ouid=114154757220276176557&rtpof=true&sd=true",
+      "app_link": { "label": "Game", "url": "https://jonathanmccrimmond.github.io/WhackaLogan/" }
     }
   ]
 }

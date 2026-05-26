@@ -90,6 +90,18 @@
       linkItem.textContent = "Slide deck pending";
     }
     links.appendChild(linkItem);
+
+    if (p.app_link && p.app_link.url) {
+      const appItem = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = p.app_link.url;
+      a.textContent = `${p.app_link.label || "Open"} →`;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      appItem.appendChild(a);
+      links.appendChild(appItem);
+    }
+
     li.appendChild(links);
 
     return li;
